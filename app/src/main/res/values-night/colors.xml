@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="purple">#5602c5</color>
+
+    <color name="gray">#f7f7f7</color>
+    <color name="search_text">#A9A9A9</color>
+
+    <color name="highlight_blue">#99181827</color>
+    <color name="drawer">#CC181827</color>
+    <color name="transparent">#6628293B</color>
+    <color name="tab_blue">#141318</color>
+    <color name="alice_blue">#141318</color>
+    <color name="text_color">#B3EDEDED</color>
+    <color name="text_color2">#EDEDED</color>
+
+
+    <color name="player_card1">#333450</color>
+    <color name="player_card2">#272944</color>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sonara</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="search_songs_playlists_and_artists">Search songs, playlists, and artists</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--  TODO: Remove or change this placeholder text  -->
+</resources>

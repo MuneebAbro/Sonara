@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/compactPlayerCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_shadow"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:visibility="gone">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:elevation="16dp"
+        android:background="@drawable/circle_play_card"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="visible">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        android:alpha="0.9"
+    android:layout_margin="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+   >
+
+    <ImageView
+        android:id="@+id/bkgImgCompact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+</androidx.cardview.widget.CardView>
+
+
+
+    <ImageView
+        android:id="@+id/compact_albumCover"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_square"
+        android:contentDescription="@string/cover"
+        android:layout_margin="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/compact_previousBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/pause"
+        android:src="@drawable/previous"
+        android:layout_marginEnd="12dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardPlayPause"
+        app:layout_constraintEnd_toStartOf="@+id/cardPlayPause"
+        app:layout_constraintTop_toTopOf="@+id/cardPlayPause"
+        app:tint="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/cardPlayPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_bkg_two"
+        android:gravity="center"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/compact_nextBtn"
+        app:layout_constraintEnd_toStartOf="@+id/compact_nextBtn"
+        app:layout_constraintTop_toTopOf="@+id/compact_nextBtn"
+        >
+
+        <ImageView
+            android:id="@+id/compact_playPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/pause"
+
+            android:src="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="@+id/compact_nextBtn"
+            app:layout_constraintEnd_toStartOf="@+id/compact_nextBtn"
+            app:layout_constraintTop_toTopOf="@+id/compact_nextBtn"
+            app:tint="@android:color/white" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/compact_nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/pause"
+        android:rotation="180"
+        android:padding="8dp"
+        android:src="@drawable/previous"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/compact_song_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/song_title"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/compact_albumCover"
+        app:layout_constraintStart_toStartOf="@+id/compact_artistName"
+        app:layout_constraintTop_toBottomOf="@+id/compact_artistName" />
+
+    <TextView
+        android:id="@+id/compact_artistName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginStart="16dp"
+        android:text="@string/artist"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/compact_albumCover"
+        app:layout_constraintTop_toTopOf="@+id/compact_albumCover" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

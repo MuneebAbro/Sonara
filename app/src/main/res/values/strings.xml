@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sonara</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_songs_playlists_and_artists">Search songs, playlists, and artists</string>
+    <string name="background_image">Background Image</string>
+    <string name="menu">menu</string>
+    <string name="_0_tracks">0 Tracks</string>
+    <string name="cover">cover</string>
+    <string name="pause">pause</string>
+    <string name="song_title">Song Title</string>
+    <string name="artist">Artist</string>
+    <string name="logo">logo</string>
+    <string name="_0_00">0:00</string>
+    <string name="_3_45">3:45</string>
+    <string name="previous">previous</string>
+    <string name="time">time</string>
+    <string name="dark_mode">Dark Mode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--  TODO: Remove or change this placeholder text  -->
+</resources>

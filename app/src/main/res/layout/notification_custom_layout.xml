@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/notification_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_square"
+            android:clipToOutline="true"
+            android:contentDescription="@string/previous"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|start"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/notification_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/artist"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/song_title"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/previous_notification"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content">
+
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:contentDescription="@string/pause"
+            android:src="@drawable/pause_notification"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content">
+
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:contentDescription="@string/pause"
+            android:src="@drawable/previous_notification"
+            android:rotation="180"
+            android:layout_height="wrap_content">
+
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
